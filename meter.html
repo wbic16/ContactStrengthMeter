@@ -1,0 +1,51 @@
+<html>
+<head>
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+    <script type="text/javascript" src="js/dracula_graffle.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/dracula_graph.js"></script>
+	 <script type="text/javascript" src="meter.js"></script>
+	 <style type="text/css" media="all">
+		 body { font-family: Consolas, monospace; }
+	 </style>
+</head>
+<body>
+	<div id="instructions" style="position: absolute; top: 15px; left: 350px;">
+	<h1>Contact Strength Meter</h1>
+	<p>
+	<ul>
+		<li>Instructions: Enter your contact list in comma-separated pairs (one pair per line).</li>
+		<li>Order does not matter. You can also click+drag the nodes.</li>
+		<li>License: <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>. Source: <a href="http://www.graphdracula.net/">http://www.graphdracula.net/</a></li>
+		<li><a href="">Please fork me on github!</a></li>
+	</ul>
+&lt;---------------- Like this!
+</p>
+</div>
+<div id="input_pane" style="position: absolute; top: 15px; left: 15px;">
+	<textarea rows="10" style="width: 300px;" id="input_data">
+Will, Brian N
+Will, David P
+Will, Tyson J
+Will, Kevin L
+Will, Adam N
+Adam N, Todd K
+Will, Chris L
+Brian N, Chad S
+Chad S, Shawn S
+David P, Tyson J
+David P, Calvin F
+Tyson J, Chris D
+Matt K, Phil
+Kevin L, Dave
+Chris D, Cody
+Will, Matt K
+	</textarea><br />
+	<button id="redraw" onclick="redraw();">redraw</button>
+</div>
+<div id="content" style="position: absolute; top: 220px; left: 15px; background: #e0e0e0;">
+	<div id="canvas"></div>
+</div>
+
+</body>
+</html>
